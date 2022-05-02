@@ -7,16 +7,16 @@ h1 {
 a:hover{
     color:#ff0000;
 }
+.bg {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
 #whole {
     position:absolute;
     width: 100%;
     
-}
-#bg {
-    position:relative;
-    background-repeat: no-repeat;
-    background-size:cover;
-    z-index:-1;
 }
 #txt{
     width: 75%;
