@@ -1,6 +1,9 @@
-﻿h1 {
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
     color:#b6ff00
 }
 a{
-    color:red
+    color:#ff0000
 }
