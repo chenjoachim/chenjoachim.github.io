@@ -14,7 +14,7 @@ a:hover{
 #bg {
     background: url("01.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:100% 100%;
 }
 #txt{
     width: 75%;
