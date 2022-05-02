@@ -10,11 +10,12 @@ a:hover{
 #container{
     width: 100%;
 }
-#image {
-    width: 25%;
-    float: right;
-}
+
 #text {
     width: 75%;
     float: left;
+}
+#image {
+    width: 25%;
+    float: right;
 }

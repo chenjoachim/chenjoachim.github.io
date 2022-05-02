@@ -6,37 +6,39 @@
     <link rel="icon" href="penguin.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <audio controls loop="loop" autoplay="autoplay">
-        <source src="music.mp3" type="audio/mp3" />
-    </audio>
-    <h1 id="date"></h1>
-    <script>
-        setInterval(function () {
-            var detail = [];
-            var num = [];
-            var step;
-            date = new Date();
-            num[5] = date.getSeconds();
-            num[4] = date.getMinutes();
-            num[3] = date.getHours();
-            num[1] = date.getDate();
-            num[0] = date.getMonth();
-            num[2] = date.getFullYear();
-            if (num[0] < 10) {
-                detail[0] = '0' + (num[0] + 1).toString();
-            }
-            else detail[0] = (num[0] + 1).toString();
-            for (step = 1; step < 6; step++) {
-                if (num[step] < 10) {
-                    detail[step] = '0' + num[step].toString();
-                }
-                else detail[step] = num[step].toString();
-            }
-            document.getElementById('date').innerHTML = detail[0] + '-' + detail[1] + '-' + detail[2] + ' ' + detail[3] + ':' + detail[4] + ':' + detail[5];
-        }, 1000)
-    </script>
     <div id="container">
+        <audio controls loop="loop" autoplay="autoplay">
+            <source src="music.mp3" type="audio/mp3" />
+        </audio>
+        <h1 id="date"></h1>
+        <script>
+            setInterval(function () {
+                var detail = [];
+                var num = [];
+                var step;
+                date = new Date();
+                num[5] = date.getSeconds();
+                num[4] = date.getMinutes();
+                num[3] = date.getHours();
+                num[1] = date.getDate();
+                num[0] = date.getMonth();
+                num[2] = date.getFullYear();
+                if (num[0] < 10) {
+                    detail[0] = '0' + (num[0] + 1).toString();
+                }
+                else detail[0] = (num[0] + 1).toString();
+                for (step = 1; step < 6; step++) {
+                    if (num[step] < 10) {
+                        detail[step] = '0' + num[step].toString();
+                    }
+                    else detail[step] = num[step].toString();
+                }
+                document.getElementById('date').innerHTML = detail[0] + '-' + detail[1] + '-' + detail[2] + ' ' + detail[3] + ':' + detail[4] + ':' + detail[5];
+            }, 1000)
+        </script>
+
         <div id="text">
             <h1>Biography</h1>
             <p>
@@ -56,15 +58,15 @@
                 <a href="https://cn.ittf.com/">table tennis</a>
                 and
                 <a href="https://www.youtube.com/watch?v=L4B1IJmjsyo&ab_channel=AhmedBarod">the piano.</a>
-                Although I have been busy recently, I would try to do these things to relax myself.
+                Although I have been busy recently, I would try to do these things to relax myself. Fine......
             </p>
         </div>
         <div id="image">
             <img src="uhua_50.jpg"
-                 alt="GeeksforGeeks logo"
-                 align="right">
+                 alt="GeeksforGeeks logo">
         </div>
     </div>
-    
+
 </body>
+
 </html>
