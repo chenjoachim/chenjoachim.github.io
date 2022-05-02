@@ -14,12 +14,6 @@ a:hover{
 .bg {
     position: relative;
 }
-#bgimg {
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
 #whole {
     width: 100%;
     top: 8px;
