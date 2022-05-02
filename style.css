@@ -9,11 +9,13 @@ a:hover{
 }
 #whole {
     width: 100%;
+    
+}
+#bg {
     background: url("01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 #txt{
     width: 75%;
     float: left;
