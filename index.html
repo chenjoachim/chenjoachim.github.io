@@ -10,6 +10,20 @@
     <audio controls autoplay loop>
         <source src="music.mp3" type="audio/mp3" />
     </audio>
+    <p id="date"></p>
+    <script>
+        setInterval(function () {
+            date = new Date();
+            sec = date.getSeconds();
+            min = date.getMinutes();
+            hour = date.getHours();
+            day = date.getDay();
+            today = date.getDate();
+            month = date.getMonth();
+            year = date.getFullYear();
+            document.getElementById('date').innerHTML = month + '-' + today + '-' + year + ' ' + hour + ':' + min + ':' + sec;
+        },1000)
+    </script>
     <h1>Biography</h1>
     <p>
         I'm a student from National Taiwan University. I major in
