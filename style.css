@@ -4,9 +4,9 @@
 h1 {
     color:#b6ff00
 }
-a{
+a:hover{
     color:#ff0000
 }
-pic{
+#pic{
     float:left
 }
