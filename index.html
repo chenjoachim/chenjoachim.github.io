@@ -1,62 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <title>你好，GitHub</title>
-    <link rel="icon" href="penguin.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css">
+    <title>
+        HTML img align Attribute
+    </title>
 </head>
+
 <body>
-    <audio controls loop="loop" autoplay="autoplay" >
-        <source src="music.mp3" type="audio/mp3" />
-    </audio>
-    <h1 id="date"></h1>
-    <script>
-        setInterval(function () {
-            var detail = [];
-            var num = [];
-            var step;
-            date = new Date();
-            num[5] = date.getSeconds();
-            num[4]= date.getMinutes();
-            num[3]= date.getHours();
-            num[1] = date.getDate();
-            num[0] = date.getMonth();
-            num[2] = date.getFullYear();
-            if (num[0] < 10) {
-                detail[0] = '0' + (num[0] + 1).toString();
-            }
-            else detail[0] = (num[0] + 1).toString();
-            for (step = 1; step < 6; step++) {
-                if (num[step] < 10) {
-                    detail[step] = '0' + num[step].toString();
-                }
-                else detail[step] = num[step].toString();
-            }
-            document.getElementById('date').innerHTML = detail[0] + '-' + detail[1] + '-' + detail[2] + ' ' + detail[3] + ':' + detail[4] + ':' + detail[5];
-        },1000)
-    </script>
-    <h1>Biography</h1>
-    <p>
-        My name is Yu-Hua Chen, and I'm a student from National Taiwan University. I major in
-        <a href="https://web.ee.ntu.edu.tw">Electronic Engineering </a>
-        now, and I was graduated from
-        <a href="https://www.nehs.hc.edu.tw">National Experimental High School.</a>
-    </p>
-    <h1>Hobbie</h1>
-    <p>
-        I love to
-        <a href="https://www.youtube.com/watch?v=-1uflsbe_D0&ab_channel=UhuaChen">compose songs </a>
-        and watch
-        <a href="https://www.cpbl.com.tw/">baseball games</a>
-        in my free time.
-        Sometimes, I also play
-        <a href="https://cn.ittf.com/">table tennis</a>
-        and
-        <a href="https://www.youtube.com/watch?v=L4B1IJmjsyo&ab_channel=AhmedBarod">the piano.</a>
-        Although I have been busy recently, I would try to do these things to relax myself.
-        and whatTF?
-    </p>
-    <img src="uhua_50.jpg" ,alt="It's me!" ,align="right">
+    <h1>GeeksforGeeks</h1>
+
+    <h2>HTML img align Attribute</h2>
+
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190506164011/logo3.png"
+         alt="GeeksforGeeks logo"
+         align="right">
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190506164011/logo3.png"
+         alt="GeeksforGeeks logo"
+         align="left">
 </body>
+
 </html>
