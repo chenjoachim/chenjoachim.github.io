@@ -8,6 +8,7 @@ a:hover{
     color:#ff0000;
 }
 #whole {
+    position:absolute;
     width: 100%;
     
 }
