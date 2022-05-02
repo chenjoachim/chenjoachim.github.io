@@ -11,12 +11,12 @@ a:hover{
     position: relative;
 }
 #bgimg {
+    position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
 }
 #whole {
-    position: absolute;
     width: 100%;
     top: 8px;
     left: 16px;
