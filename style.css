@@ -7,15 +7,15 @@ h1 {
 a:hover{
     color:#ff0000;
 }
-#container{
+#whole{
     width: 100%;
 }
 
-#text {
+#txt{
     width: 75%;
     float: left;
 }
-#image {
+#pic {
     width: 25%;
     float: right;
 }
