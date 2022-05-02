@@ -7,21 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <audio controls autoplay loop>
+    <audio controls loop autoplay >
         <source src="music.mp3" type="audio/mp3" />
     </audio>
     <p id="date"></p>
     <script>
         setInterval(function () {
+            var detail = [];
+            var num = [];
+            var step;
             date = new Date();
-            sec = date.getSeconds();
-            min = date.getMinutes();
-            hour = date.getHours();
-            day = date.getDay();
-            today = date.getDate();
-            month = date.getMonth();
-            year = date.getFullYear();
-            document.getElementById('date').innerHTML = month + '-' + today + '-' + year + ' ' + hour + ':' + min + ':' + sec;
+            num[5] = date.getSeconds();
+            num[4]= date.getMinutes();
+            num[3]= date.getHours();
+            num[1] = date.getDate();
+            num[0] = date.getMonth();
+            num[2] = date.getFullYear();
+            for (step = 0; step < 6; step++) {
+                if (num[step] < 10) {
+                    detail[step] = '0' + num[step].toString();
+                }
+                else detail[step] = num[step].toString();
+            }
+            document.getElementById('date').innerHTML = detail[0] + '-' + detail[1] + '-' + detail[2] + ' ' + detail[3] + ':' + detail[4] + ':' + detail[5];
         },1000)
     </script>
     <h1>Biography</h1>
@@ -42,7 +50,7 @@
         <a href="https://cn.ittf.com/">table tennis</a>
         and
         <a href="https://www.youtube.com/watch?v=L4B1IJmjsyo&ab_channel=AhmedBarod">the piano.</a>
-        Any problem?What??Music ok?Date ok?
+        Any problem?What??Music and Date ok?
     </p>
     <picture>
         <img src="uhua_50.jpg" ,title="It's me!" ,style="(min-width: 306px)" ,id="pic" />
