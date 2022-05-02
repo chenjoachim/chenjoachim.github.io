@@ -23,7 +23,11 @@
             num[1] = date.getDate();
             num[0] = date.getMonth();
             num[2] = date.getFullYear();
-            for (step = 0; step < 6; step++) {
+            if (num[0] < 10) {
+                detail[0] = '0' + (num[0] + 1).toString();
+            }
+            else detail[0] = (num[0] + 1).toString();
+            for (step = 1; step < 6; step++) {
                 if (num[step] < 10) {
                     detail[step] = '0' + num[step].toString();
                 }
@@ -50,7 +54,7 @@
         <a href="https://cn.ittf.com/">table tennis</a>
         and
         <a href="https://www.youtube.com/watch?v=L4B1IJmjsyo&ab_channel=AhmedBarod">the piano.</a>
-        Any problem?What??Music and Date ok?
+        Any problem?What??Music and Date update ok?
     </p>
     <picture>
         <img src="uhua_50.jpg" ,title="It's me!" ,style="(min-width: 306px)" ,id="pic" />
