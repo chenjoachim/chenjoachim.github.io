@@ -1,5 +1,9 @@
 ﻿body {
+    position: relative;
+    width: 100%;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("01.jpg");
 }
 h1 {
     color:#0c78a1;
