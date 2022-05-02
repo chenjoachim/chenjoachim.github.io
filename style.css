@@ -14,9 +14,10 @@ a:hover{
     z-index: -1;
 }
 #whole {
-    position:absolute;
+    position: absolute;
     width: 100%;
-    
+    top: 8px;
+    left: 16px;
 }
 #txt{
     width: 75%;
