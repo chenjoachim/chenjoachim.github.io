@@ -26,12 +26,10 @@
                     num[1] = date.getDate();
                     num[0] = date.getMonth();
                     num[2] = date.getFullYear();
-                    if (num[0] < 10) {
-                        detail[0] = '0' + (num[0] + 1).toString();
-                    }
-                    else detail[0] = (num[0] + 1).toString();
+
+                    detail[0] = (num[0] + 1).toString();
                     for (step = 1; step < 6; step++) {
-                        if (num[step] < 10) {
+                        if (num[step] < 10 && step>=3) {
                             detail[step] = '0' + num[step].toString();
                         }
                         else detail[step] = num[step].toString();
