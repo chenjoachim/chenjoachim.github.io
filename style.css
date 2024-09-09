@@ -1,29 +1,93 @@
-﻿body {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("img/bg.jpg");
+﻿/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* Basic styles */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
-h1 {
-    color:#0c78a1;
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
 }
-a:hover{
-    color:#ff0000;
+
+header {
+    background: #c9fcff;
+    color: #333;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #333 3px solid;
 }
-.bg {
-    position: relative;
+
+header a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
 }
-#whole {
-    width: 100%;
-    top: 50px;
-    left: 50px;
+
+h1, h2, h3 {
+    font-weight: 600;
 }
-#txt{
-    width: 75%;
-    float: left;
+
+/* Navigation */
+nav ul {
+    padding: 0;
+    list-style: none;
 }
-#pic {
-    width: 25%;
-    float: right;
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Sections */
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Projects */
+.project {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media(max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* Add subtle animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Hover effects */
+.project:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }

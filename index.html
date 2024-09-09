@@ -1,72 +1,83 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Uhua Chen</title>
-    <link rel="icon" href="img/penguin.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Hua Chen - Electrical Engineer & AI Researcher</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="bg">
-        <div id="whole">
-            <audio controls loop="loop" autoplay="autoplay">
-                <source src="music.mp3" type="audio/mp3" />
-            </audio>
-            <h1 id="date"></h1>
-            <script>
-                setInterval(function () {
-                    var detail = [];
-                    var num = [];
-                    var step;
-                    date = new Date();
-                    num[5] = date.getSeconds();
-                    num[4] = date.getMinutes();
-                    num[3] = date.getHours();
-                    num[1] = date.getDate();
-                    num[0] = date.getMonth();
-                    num[2] = date.getFullYear();
-
-                    detail[0] = (num[0] + 1).toString();
-                    for (step = 1; step < 6; step++) {
-                        if (num[step] < 10 && step>=3) {
-                            detail[step] = '0' + num[step].toString();
-                        }
-                        else detail[step] = num[step].toString();
-                    }
-                    document.getElementById('date').innerHTML = detail[0] + '-' + detail[1] + '-' + detail[2] + ' ' + detail[3] + ':' + detail[4] + ':' + detail[5];
-                }, 1000)
-            </script>
-
-            <div id="txt">
-                <h1>Biography</h1>
-                <p>
-                    My name is Yu-Hua Chen, and I'm a student from National Taiwan University. I major in
-                    <a href="https://web.ee.ntu.edu.tw">Electronic Engineering </a>
-                    now, and I graduated from
-                    <a href="https://www.nehs.hc.edu.tw">National Experimental High School.</a>
-                </p>
-                <h1>Hobbie</h1>
-                <p>
-                    I love to
-                    <a href="https://www.youtube.com/watch?v=-1uflsbe_D0&ab_channel=UhuaChen">compose some songs </a>
-                    and watch
-                    <a href="https://www.cpbl.com.tw/">baseball games</a>
-                    in my free time.<br>
-                    Sometimes, I also play
-                    <a href="https://cn.ittf.com/">table tennis</a>
-                    and the
-                    <a href="https://www.youtube.com/watch?v=L4B1IJmjsyo&ab_channel=AhmedBarod"> piano.</a>
-                    Although I have been busy recently, I would try to do these things to relax myself.
-            </div>
-            <div id="pic">
-                <img src="img/uhua_50.jpg"
-                     alt="It's me!"
-                     align="middle">
-            </div>
+    <header>
+        <div class="container">
+            <h1>Yu-Hua Chen</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Electrical Engineer & AI Researcher with a passion for innovative technologies.</p>
+            <!-- Add more details about yourself here -->
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>AI Research</li>
+                <li>Electrical Engineering</li>
+                <li>Software Development</li>
+                <!-- Add more skills here -->
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects & Achievements</h2>
+            <div class="project">
+                <h3>KIBO Robot Programming Challenge</h3>
+                <p>1st place in both domestic and international rounds</p>
+                <a href="https://www.youtube.com/live/NjOgNrPMUJs?t=3213s" target="_blank">Watch Video</a>
+            </div>
+            <!-- Add more projects here -->
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>Bachelor's Degree in Electrical Engineering, National Taiwan University (2021-2025)</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:chenjoachim63@outlook.com">chenjoachim63@outlook.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/chenjoachim" target="_blank">GitHub Profile</a></p>
+        </section>
     </div>
 
-</body>
+    <footer>
+        <p>&copy; 2024 Yu-Hua Chen. All rights reserved.</p>
+    </footer>
 
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add more interactivity here
+    </script>
+</body>
 </html>
