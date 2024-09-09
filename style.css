@@ -7,6 +7,8 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -28,6 +30,10 @@ header a {
     color: #333;
     text-decoration: none;
     font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
 }
 
 /* Header content styles */
@@ -53,10 +59,6 @@ header a {
     color: #211F1F; /* GitHub dark */
 }
 
-h1, h2, h3 {
-    font-weight: 600;
-}
-
 /* Navigation */
 nav ul {
     padding: 0;
@@ -68,10 +70,22 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0077B5;
+}
+
 /* Sections */
 section {
     padding: 20px 0;
     border-bottom: 1px solid #eee;
+    animation: fadeIn 1s ease-in;
 }
 
 /* Projects */
@@ -81,6 +95,22 @@ section {
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0077B5;
+    text-decoration: none;
 }
 
 /* Footer */
@@ -97,20 +127,24 @@ footer {
     .container {
         width: 95%;
     }
+    
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .social-icons {
+        margin-top: 10px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
 
-/* Add subtle animations */
+/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-}
-
-section {
-    animation: fadeIn 1s ease-in;
-}
-
-/* Hover effects */
-.project:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
 }
