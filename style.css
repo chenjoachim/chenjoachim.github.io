@@ -53,4 +53,64 @@ header a {
     color: #211F1F; /* GitHub dark */
 }
 
-/* Rest of the CSS remains the same */
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* Navigation */
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Sections */
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Projects */
+.project {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media(max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* Add subtle animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Hover effects */
+.project:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
